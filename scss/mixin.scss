@@ -1,0 +1,40 @@
+@import "color";
+
+//text
+
+@mixin adaptive-text($min, $max) {
+  font-size: clamp($min, 2vw, $max);
+}
+
+h1 {
+  @include adaptive-text(50px, 62px);
+}
+
+h2 {
+  @include adaptive-text(30px, 48px);
+}
+
+h3 {
+  @include adaptive-text(18px, 24px);
+}
+
+p {
+  @include adaptive-text(14px, 18px);
+}
+
+
+//button
+@mixin button-style($bg-color, $hover-color) {
+  background-color: $bg-color;
+  color: $secondary-text-color;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $hover-color;
+    color: #ffffff;
+  }
+}
