@@ -21,21 +21,24 @@
                 <li class="dropdown">
                     <a href="#" class="dropbtn">More</a>
                     <ul class="dropdown-menu">
-                        <li>test name</li>
-                        <li>test name</li>
-                        <li>test name</li>
-                        <li>test name</li>
-                        <li>test name</li>
+                        <li><a href="#">Test</a></li>
+                        <li><a href="#">Test</a></li>
+                        <li><a href="#">Test</a></li>
+                        <li><a href="#">Test</a></li>
+                        <li><a href="#">Test</a></li>
                     </ul>
                 </li>
             </ul>
         </nav>
         <div class="search">
-            <input type="text" placeholder="Search">
+            <input type="text" class="search-input" placeholder="Search" />
+            <button type="submit" class="search-icon">
+                <img src="https://static-00.iconduck.com/assets.00/search-icon-2048x2048-cmujl7en.png" alt="search icon" />
+            </button>
         </div>
         <a href="" class="quote-btn"><button>Get A Quote</button></a>
     </div>
-    <div class="hero wrapper">
+    <div class="hero wrapper wrapper-ver">
         <img src="https://www.mein-helix.de/images/suite/digitalize-processes/einverstaendniserklaerungen-kenntnisnahme.png" alt="">
         <h1><span class="span-text">We</span> Are Best <span class="span-text"><br>Software</span></h1>
         <div class="hero-text md-mg">
@@ -48,25 +51,33 @@
 
 <main>
     <section class="trust-section wrapper wrapper-ver tac">
-        <span class="h-sec">Trusted Clients</span>
+        <h4>Trusted Clients</h4>
         <div class="trust-content">
-            <div class="client-item">
-                <img src="source/images/logo_helix.svg" alt="">
-            </div>
-            <div class="client-item">
-                <img src="source/images/logo_helix.svg" alt="">
-            </div>
-            <div class="client-item">
-                <img src="source/images/logo_helix.svg" alt="">
-            </div>
-            <div class="client-item">
-                <img src="source/images/logo_helix.svg" alt="">
-            </div>
-            <div class="client-item">
-                <img src="source/images/logo_helix.svg" alt="">
-            </div>
-            <div class="client-item">
-                <img src="source/images/logo_helix.svg" alt="">
+            <div class="trust-carousel">
+                <div class="client-item">
+                    <img src="source/images/logo_helix.svg" alt="">
+                </div>
+                <div class="client-item">
+                    <img src="source/images/logo_helix.svg" alt="">
+                </div>
+                <div class="client-item">
+                    <img src="source/images/logo_helix.svg" alt="">
+                </div>
+                <div class="client-item">
+                    <img src="source/images/logo_helix.svg" alt="">
+                </div>
+                <div class="client-item">
+                    <img src="source/images/logo_helix.svg" alt="">
+                </div>
+                <div class="client-item">
+                    <img src="source/images/logo_helix.svg" alt="">
+                </div>
+                <div class="client-item">
+                    <img src="source/images/logo_helix.svg" alt="">
+                </div>
+                <div class="client-item">
+                    <img src="source/images/logo_helix.svg" alt="">
+                </div>
             </div>
         </div>
     </section>
@@ -99,7 +110,7 @@
         <div class="wrapper">
             <div class="featured-header wrapper-ver tac">
                 <span class="h-sec">Featured Services</span>
-                <h2>Technology Solutions That Work For You</h2>
+                <h2 class="sm-mg">Technology Solutions That Work For You</h2>
             </div>
             <div class="featured-main">
                 <div class="featured-left">
@@ -132,7 +143,7 @@
         </div>
     </section>
 
-    <section class="cta-section wrapper-ver">
+    <section class="cta-section">
         <div class="wrapper">
             <div class="cta-grid">
                 <div class="cta-text">
@@ -182,7 +193,7 @@
         <div class="portfolio-header tac">
             <span class="h-sec">Projects</span>
             <h2>Our Portfolio</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam architecto ipsam pariatur placeat possimus?</p>
+            <p class="sm-mg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam architecto ipsam pariatur placeat possimus?</p>
         </div>
         <div class="portfolio-main">
             <img src="https://i.pinimg.com/736x/7e/ff/bf/7effbfcba1298227abef4c7f30860c0f.jpg" alt="">
@@ -194,7 +205,7 @@
     </section>
 
     <section class="info-section wrapper-ver">
-        <div class="wrapper">
+        <div class="info-flex wrapper">
             <div class="info-text">
                 <h2>Delivering IT Solutions Since 1993</h2>
                 <p class="sm-mg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto culpa, delectus deserunt doloribus ipsa labore magni ratione sapiente sint?</p>
@@ -202,7 +213,7 @@
             </div>
             <div class="info-container">
                 <div class="info-item">
-                    <span class="">6,273+</span>
+                    <span>6,273+</span>
                     <p>Lorem ipsum.</p>
                 </div>
                 <div class="info-item">
@@ -226,25 +237,21 @@
             <h2 class="tac">What Out Client Sat</h2>
             <div class="feedback-slide sm-mg">
                 <div class="feedback-item">
-                    <div class="feedback-img"></div>
+                    <div class="feedback-img"><img src="https://i.pinimg.com/736x/7e/ff/bf/7effbfcba1298227abef4c7f30860c0f.jpg" alt=""></div>
                     <div class="feedback-text">
                         <h4>Dani Danials</h4>
                         <span>Project Manager</span>
                         <p class="sm-mg">Lorem ipsum dolor sit amet, consectetur.</p>
-                        <div class="feedback-rating">
-                            <i></i>
-                        </div>
+                        <div class="rating static" data-rating="4.5"></div>
                     </div>
                 </div>
                 <div class="feedback-item">
-                    <div class="feedback-img"></div>
+                    <div class="feedback-img"><img src="https://i.pinimg.com/736x/7e/ff/bf/7effbfcba1298227abef4c7f30860c0f.jpg" alt=""></div>
                     <div class="feedback-text">
                         <h4>Dani Danials</h4>
                         <span>Project Manager</span>
                         <p class="sm-mg">Lorem ipsum dolor sit amet, consectetur.</p>
-                        <div class="feedback-rating">
-                            <i></i>
-                        </div>
+                        <div class="rating static" data-rating="4.5"></div>
                     </div>
                 </div>
             </div>
@@ -254,34 +261,34 @@
     <section class="team-section wrapper wrapper-ver">
         <div class="team-header tac">
             <span class="h-sec">Our Team</span>
-            <h2>Meet Out Professional</h2>
+            <h2 class="sm-mg">Meet Out Professional</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam deserunt explicabo, ipsa numquam quae suscipit tenetur vero. Amet optio, ut!</p>
         </div>
-        <div class="team-main sm-mg">
+        <div class="team-main md-mg">
             <div class="team-item">
                 <div class="team-img"><img src="https://i.pinimg.com/736x/7e/ff/bf/7effbfcba1298227abef4c7f30860c0f.jpg" alt=""></div>
-                <div class="team-text">
+                <div class="team-text sm-mg">
                     <h4>Marta Smith</h4>
                     <p>Lorem ipsum.</p>
                 </div>
             </div>
             <div class="team-item">
                 <div class="team-img"><img src="https://i.pinimg.com/736x/7e/ff/bf/7effbfcba1298227abef4c7f30860c0f.jpg" alt=""></div>
-                <div class="team-text">
+                <div class="team-text sm-mg">
                     <h4>Marta Smith</h4>
                     <p>Lorem ipsum.</p>
                 </div>
             </div>
             <div class="team-item">
                 <div class="team-img"><img src="https://i.pinimg.com/736x/7e/ff/bf/7effbfcba1298227abef4c7f30860c0f.jpg" alt=""></div>
-                <div class="team-text">
+                <div class="team-text sm-mg">
                     <h4>Marta Smith</h4>
                     <p>Lorem ipsum.</p>
                 </div>
             </div>
             <div class="team-item">
                 <div class="team-img"><img src="https://i.pinimg.com/736x/7e/ff/bf/7effbfcba1298227abef4c7f30860c0f.jpg" alt=""></div>
-                <div class="team-text">
+                <div class="team-text sm-mg">
                     <h4>Marta Smith</h4>
                     <p>Lorem ipsum.</p>
                 </div>
@@ -292,12 +299,12 @@
     <section class="news-sections wrapper wrapper-ver">
         <div class="news-header">
             <span class="h-sec">Latest Blogs</span>
-            <h2>Check Out Our Latest News & Article</h2>
+            <h2 class="sm-mg">Check Out Our Latest News & Article</h2>
         </div>
         <div class="news-container md-mg">
             <div class="news-item">
                 <div class="tag">Website</div>
-                <h4>Business Provider of Software</h4>
+                <h4 class="sm-mg">Business Provider of Software</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea quas reiciendis temporibus!</p>
                 <div class="news-info">
                     <i><img src="" alt=""></i>
@@ -306,7 +313,7 @@
             </div>
             <div class="news-item">
                 <div class="tag">Website</div>
-                <h4>Business Provider of Software</h4>
+                <h4 class="sm-mg">Business Provider of Software</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea quas reiciendis temporibus!</p>
                 <div class="news-info">
                     <i><img src="" alt=""></i>
@@ -315,7 +322,7 @@
             </div>
             <div class="news-item">
                 <div class="tag">Website</div>
-                <h4>Business Provider of Software</h4>
+                <h4 class="sm-mg">Business Provider of Software</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea quas reiciendis temporibus!</p>
                 <div class="news-info">
                     <i><img src="" alt=""></i>
@@ -391,7 +398,7 @@
         </div>
     </section>
 
-    <section class="newsletter-section tac sm-mg">
+    <section class="newsletter-section tac md-mg">
         <h2>Newsletter</h2>
         <p>Lorem ipsum dolor sit amet.</p>
         <div class="subscribe-box">
@@ -439,14 +446,17 @@
 
         <div class="footer-column">
             <h4>Contact Us</h4>
-            <p><strong>Email:</strong> Yourname@email.com</p>
-            <p><strong>Phone:</strong> 123456789013</p>
-            <p><strong>Address:</strong> XYZ Street, 123 UK</p>
+            <p><span class="footer-span">Email</span> Yourname@email.com</p>
+            <p><span>Phone</span> 123456789013</p>
+            <p><span>Address</span> XYZ Street, 123 UK</p>
         </div>
     </div>
+
+    <div class="company"><p>Copyright 2024 UXApex</p></div>
+
 </footer>
-<div class="company"><p>Copyright 2024 UXApex</p></div>
-</footer>
+
+
 
 </body>
 
