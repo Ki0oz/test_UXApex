@@ -1,17 +1,29 @@
+.sm-mg {
+  margin: 24px 0;
+}
+
+.md-mg {
+  margin: 36px 0;
+}
+
 h1 {
-  font-size: clamp(36px, 2vw, 58px);
+  font-size: clamp(48px, 3vw, 62px);
 }
 
 h2 {
-  font-size: clamp(24px, 2vw, 48px);
+  font-size: clamp(36px, 3vw, 52px);
 }
 
 h3 {
-  font-size: clamp(20px, 2vw, 36px);
+  font-size: clamp(20px, 3vw, 28px);
+}
+
+h4 {
+  font-size: clamp(18px, 3vw, 24px);
 }
 
 p {
-  font-size: clamp(14px, 2vw, 18px);
+  font-size: clamp(14px, 3vw, 18px);
 }
 
 /*# sourceMappingURL=mixin.css.map */
