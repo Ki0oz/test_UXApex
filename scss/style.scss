@@ -385,9 +385,125 @@ header{
       border: 1px solid black;
     }
   }
-  .quote-btn{
-
+  .btn{
+    justify-self: center;
   }
 }
 
+.tecno-section{
+  .programm-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    img{
+      width: 10%;
+
+    }
+  }
+}
+
+.contact-section{
+  background-color: $secondary-background-color;
+  .wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    .contact-text{
+      .contact-item{
+        display: flex;
+
+        .contact-icon{
+          width: 10%;
+          background-color: $primary-background-color;
+          border-radius: 50%;
+          margin-right: 20px;
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+
+      }
+    }
+
+    .contact-formular{
+      background-color: white;
+      padding: 20px;
+      border-radius: 20px;
+      .input-group {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin-bottom: 10px;
+      }
+      input, select, textarea {
+        padding: 10px;
+        border: 1px solid #ccc;
+      }
+      textarea {
+        height: 200px;
+        width: 96%;
+      }
+    }
+  }
+}
+
+.newsletter-section{
+  .subscribe-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 40%;
+    margin: 30px auto;
+    background: white;
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    input {
+      width: 80%;
+      padding: 10px;
+      border: none;
+      outline: none;
+      font-size: 16px;
+    }
+    button {
+      background: #6c47ff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 50%;
+      cursor: pointer;
+      img {
+        width: 20px;
+      }
+    }
+  }
+}
+
+footer{
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    text-align: left;
+    img{
+      width: 50%;
+    }
+    .footer-column {
+      width: 22%;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        margin: 15px 0;
+        cursor: pointer;
+      }
+    }
+    .social-icons img {
+      width: 20px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+  }
+}
 
