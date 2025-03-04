@@ -951,11 +951,7 @@ footer{
   .choose-section{
     .choose-grid{
       grid-template-columns: 0 1fr;
-      .choose-img{
-        img{
-          display: none;
-        }
-      }
+
     }
   }
 
@@ -964,6 +960,18 @@ footer{
       .info-container{
         .info-item{
           width: 38%;
+        }
+      }
+    }
+  }
+
+  .featured-section{
+    .featured-main{
+      .featured-right{
+        .featured-item{
+          .feat-img {
+            width: 15%;
+          }
         }
       }
     }

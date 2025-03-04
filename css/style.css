@@ -855,11 +855,11 @@ footer .company {
   .choose-section .choose-grid {
     grid-template-columns: 0 1fr;
   }
-  .choose-section .choose-grid .choose-img img {
-    display: none;
-  }
   .info-section .info-flex .info-container .info-item {
     width: 38%;
+  }
+  .featured-section .featured-main .featured-right .featured-item .feat-img {
+    width: 15%;
   }
   .feedback-section .feedback-slide .feedback-item {
     padding: 20px;
