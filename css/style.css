@@ -8,7 +8,7 @@
 }
 
 h1 {
-  font-size: clamp(48px, 3vw, 62px);
+  font-size: clamp(60px, 3vw, 120px);
 }
 
 h2 {
@@ -21,14 +21,37 @@ h3 {
 
 h4 {
   font-size: clamp(18px, 3vw, 24px);
+  font-weight: 100;
 }
 
 p {
   font-size: clamp(14px, 3vw, 18px);
 }
 
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-80%);
+  }
+}
+.trust-section .splide__track ul {
+  animation: scroll 30s linear infinite;
+}
+.trust-section .splide__track ul li .client-item {
+  width: 200px;
+  height: 80px;
+  border-radius: 12px;
+  border: 1px solid rgba(194, 194, 194, 0.4);
+  align-content: center;
+}
+.trust-section .splide__track ul li .client-item img {
+  width: 40%;
+}
+
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -43,13 +66,13 @@ p {
 }
 
 .h-sec {
-  color: #604AAF;
+  color: rgb(96, 74, 175);
 }
 
 .quote-btn button {
   background-color: #F9C446;
   color: #252525;
-  padding: 12px 24px;
+  padding: 14px 36px;
   border: none;
   border-radius: 6px;
   cursor: pointer;
@@ -88,7 +111,7 @@ header .navbar nav ul a {
   padding: 5px 10px;
 }
 header .navbar nav ul a:hover {
-  color: #604AAF;
+  color: rgb(96, 74, 175);
 }
 header .navbar nav ul .dropdown {
   position: relative;
@@ -145,34 +168,12 @@ header .hero h1 {
   line-height: 1.2;
 }
 header .hero h1 .span-text {
-  color: #604AAF;
+  color: rgb(96, 74, 175);
 }
 header .hero .hero-text {
   width: 90%;
   position: relative;
   align-content: end;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-80%);
-  }
-}
-.trust-section .splide__track ul {
-  animation: scroll 30s linear infinite;
-}
-.trust-section .splide__track ul li .client-item {
-  width: 200px;
-  height: 80px;
-  border-radius: 12px;
-  border: 1px solid rgba(194, 194, 194, 0.4);
-  align-content: center;
-}
-.trust-section .splide__track ul li .client-item img {
-  width: 40%;
 }
 
 .about-section {
@@ -198,11 +199,11 @@ header .hero .hero-text {
 }
 .about-section .about-text .stat-info .stat-item .stat-number {
   font-size: 2rem;
-  color: #604AAF;
+  color: rgb(96, 74, 175);
   font-weight: bold;
 }
 .about-section .about-text .stat-info .stat-item:nth-child(1) {
-  border-right: 2px solid #604AAF;
+  border-right: 2px solid rgb(96, 74, 175);
 }
 .about-section .about-text .stat-info .stat-item:nth-child(2) {
   border-right: 2px solid rgba(96, 74, 174, 0.2);
@@ -385,9 +386,6 @@ header .hero .hero-text {
   background-color: #634CB5;
   color: white;
 }
-.feedback-section .splide__arrows {
-  display: none;
-}
 .feedback-section .feedback-slide {
   display: grid;
   gap: 20px;
@@ -410,7 +408,7 @@ header .hero .hero-text {
   border-radius: 50%;
 }
 .feedback-section .feedback-slide ul li .feedback-item .feedback-text h4 {
-  color: #604AAF;
+  color: rgb(96, 74, 175);
 }
 .feedback-section .feedback-slide ul li .feedback-item .feedback-text .rating {
   display: inline-block;
