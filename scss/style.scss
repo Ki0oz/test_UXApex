@@ -270,18 +270,18 @@ header {
                 text-align: center;
 
                 .feat-img {
-                    width: 20%;
+                    width: 60px;
+                    height: 60px;
                     background-color: $primary-background-color;
                     border-radius: 50%;
-                    padding: 6px;
                     margin: 0 auto;
                     display: flex;
                     align-items: center;
                     justify-content: center;
 
                     img {
-                        width: 60%;
-                        height: auto;
+                        width: 40px;
+                        height: 40px;
                     }
                 }
             }
@@ -364,17 +364,17 @@ header {
 
                 .choose-item {
                     display: flex;
-                    padding-bottom: 20px;
+                    padding-bottom: 30px;
 
                     .choose-img {
-                        width: 10%;
+                        width: 80px;
+                        height: 80px;
                         background-color: $primary-background-color;
                         border-radius: 50%;
-                        padding: 6px;
 
                         img {
-                            width: 60%;
-                            height: auto;
+                            width: 40px;
+                            height: 40px;
                         }
                     }
 
@@ -575,7 +575,8 @@ header {
                 display: flex;
 
                 .contact-icon {
-                    width: 10%;
+                    width: 60px;
+                    height: 60px;
                     background-color: $primary-background-color;
                     border-radius: 50%;
                     margin-right: 20px;
@@ -584,8 +585,8 @@ header {
                     justify-content: center;
 
                     img {
-                        width: 60%;
-                        height: auto;
+                        width: 30px;
+                        height: 30px;
                     }
                 }
 
@@ -622,30 +623,29 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-        max-width: 40%;
-        margin: 30px auto;
-        background: white;
+        margin: 20px auto;
         border-radius: 10px;
-        padding: 5px;
+        width: 40%;
+        background-color: white;
         border: 1px solid #ccc;
 
         input {
-            width: 80%;
-            padding: 10px;
+            flex: 1;
             border: none;
+            padding: 10px;
             outline: none;
-            font-size: 16px;
         }
 
         button {
             background: #6c47ff;
             border: none;
-            padding: 10px 15px;
-            border-radius: 50%;
+            border-radius: 0 10px 10px 0;
+            padding: 10px;
             cursor: pointer;
 
             img {
                 width: 20px;
+                height: 20px;
             }
         }
     }
@@ -882,13 +882,10 @@ footer {
 
             .choose-text {
                 .choose-benefits {
-
                     .choose-item {
-                        display: flex;
-                        padding-bottom: 20px;
+
 
                         .choose-img {
-                            height: 40px;
 
                             img {
                                 width: 60%;
@@ -966,15 +963,11 @@ footer {
                         display: flex;
 
                         .contact-icon {
-                            width: 20%;
-                            background-color: $primary-background-color;
-                            border-radius: 50%;
                             margin-right: 20px;
+                        }
 
-                            img {
-                                width: 80%;
-                                height: auto;
-                            }
+                        .contact-item-text{
+                            padding-right: 20px;
                         }
                     }
                 }
@@ -1089,18 +1082,6 @@ footer {
             .info-container {
                 .info-item {
                     width: 38%;
-                }
-            }
-        }
-    }
-
-    .featured-section {
-        .featured-main {
-            .featured-right {
-                .featured-item {
-                    .feat-img {
-                        width: 15%;
-                    }
                 }
             }
         }

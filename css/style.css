@@ -258,18 +258,18 @@ header .hero .hero-text {
   text-align: center;
 }
 .featured-section .featured-main .featured-right .featured-item .feat-img {
-  width: 20%;
+  width: 60px;
+  height: 60px;
   background-color: #634CB5;
   border-radius: 50%;
-  padding: 6px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .featured-section .featured-main .featured-right .featured-item .feat-img img {
-  width: 60%;
-  height: auto;
+  width: 40px;
+  height: 40px;
 }
 .featured-section .featured-main .featured-right .featured-item:nth-child(2), .featured-section .featured-main .featured-right .featured-item:nth-child(4) {
   margin-top: 40px;
@@ -328,17 +328,17 @@ header .hero .hero-text {
 }
 .choose-section .choose-grid .choose-text .choose-benefits .choose-item {
   display: flex;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 .choose-section .choose-grid .choose-text .choose-benefits .choose-item .choose-img {
-  width: 10%;
+  width: 80px;
+  height: 80px;
   background-color: #634CB5;
   border-radius: 50%;
-  padding: 6px;
 }
 .choose-section .choose-grid .choose-text .choose-benefits .choose-item .choose-img img {
-  width: 60%;
-  height: auto;
+  width: 40px;
+  height: 40px;
 }
 .choose-section .choose-grid .choose-text .choose-benefits .choose-item .benefits-text {
   align-self: center;
@@ -495,7 +495,8 @@ header .hero .hero-text {
   display: flex;
 }
 .contact-section .wrapper .contact-text .contact-item .contact-icon {
-  width: 10%;
+  width: 60px;
+  height: 60px;
   background-color: #634CB5;
   border-radius: 50%;
   margin-right: 20px;
@@ -504,8 +505,8 @@ header .hero .hero-text {
   justify-content: center;
 }
 .contact-section .wrapper .contact-text .contact-item .contact-icon img {
-  width: 60%;
-  height: auto;
+  width: 30px;
+  height: 30px;
 }
 .contact-section .wrapper .contact-formular {
   background-color: white;
@@ -531,29 +532,28 @@ header .hero .hero-text {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 40%;
-  margin: 30px auto;
-  background: white;
+  margin: 20px auto;
   border-radius: 10px;
-  padding: 5px;
+  width: 40%;
+  background-color: white;
   border: 1px solid #ccc;
 }
 .newsletter-section .subscribe-box input {
-  width: 80%;
-  padding: 10px;
+  flex: 1;
   border: none;
+  padding: 10px;
   outline: none;
-  font-size: 16px;
 }
 .newsletter-section .subscribe-box button {
   background: #6c47ff;
   border: none;
-  padding: 10px 15px;
-  border-radius: 50%;
+  border-radius: 0 10px 10px 0;
+  padding: 10px;
   cursor: pointer;
 }
 .newsletter-section .subscribe-box button img {
   width: 20px;
+  height: 20px;
 }
 
 footer .footer-container {
@@ -715,13 +715,6 @@ footer .company {
     width: 100%;
     height: auto;
   }
-  .choose-section .choose-grid .choose-text .choose-benefits .choose-item {
-    display: flex;
-    padding-bottom: 20px;
-  }
-  .choose-section .choose-grid .choose-text .choose-benefits .choose-item .choose-img {
-    height: 40px;
-  }
   .choose-section .choose-grid .choose-text .choose-benefits .choose-item .choose-img img {
     width: 60%;
     height: auto;
@@ -773,14 +766,10 @@ footer .company {
     display: flex;
   }
   .contact-section .wrapper .contact-text .contact-block .contact-item .contact-icon {
-    width: 20%;
-    background-color: #634CB5;
-    border-radius: 50%;
     margin-right: 20px;
   }
-  .contact-section .wrapper .contact-text .contact-block .contact-item .contact-icon img {
-    width: 80%;
-    height: auto;
+  .contact-section .wrapper .contact-text .contact-block .contact-item .contact-item-text {
+    padding-right: 20px;
   }
   .contact-section .wrapper .contact-formular {
     width: 100%;
@@ -857,9 +846,6 @@ footer .company {
   }
   .info-section .info-flex .info-container .info-item {
     width: 38%;
-  }
-  .featured-section .featured-main .featured-right .featured-item .feat-img {
-    width: 15%;
   }
   .feedback-section .feedback-slide .feedback-item {
     padding: 20px;
