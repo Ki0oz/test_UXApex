@@ -1,0 +1,31 @@
+.trust-section {
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-80%);
+    }
+  }
+
+  .splide__track{
+    ul{
+      animation: scroll 30s linear infinite;
+
+      li{
+        .client-item{
+          width: 200px;
+          height: 80px;
+          border-radius: 12px;
+          border: 1px solid rgba(194, 194, 194, 0.4);
+          align-content: center;
+
+          img{
+            width: 40%;
+          }
+        }
+      }
+    }
+  }
+}

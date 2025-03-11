@@ -3,7 +3,7 @@
  * 22 |           color: $secondary-text-color;
  *    |                  ^^^^^^^^^^^^^^^^^^^^^
  *    '
- *   scss/components/header.scss 22:18  root stylesheet */
+ *   scss/layout/header.scss 22:18  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",

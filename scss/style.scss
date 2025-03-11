@@ -1,8 +1,8 @@
-@import "color";
-@import "mixin";
-@import "slider";
-@import '../../../../../test_software/scss/components/header';
-@import '../../../../../test_software/scss/components/footer';
+@import "components/color";
+@import "mixin/mixin";
+@import "components/slider";
+@import 'layout/header';
+@import 'layout/footer';
 
 * {
     font-family: $font-family;
