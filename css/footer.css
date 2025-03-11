@@ -3,7 +3,7 @@
  * 25 |         color: $primary-background-color;
  *    |                ^^^^^^^^^^^^^^^^^^^^^^^^^
  *    '
- *   scss/layout/footer.scss 25:16  root stylesheet */
+ *   scss/layout/_footer.scss 25:16  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",

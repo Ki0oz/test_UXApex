@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../scss/mixin.scss"],"names":[],"mappings":"AAEA;EACE;;;AAEF;EACE;;;AASF;EAHE;;;AAOF;EAPE;;;AAWF;EAXE;;;AAeF;EAfE;EAiBA;;;AAGF;EApBE","file":"mixin.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/mixin/_mixin.scss"],"names":[],"mappings":"AAEA;EACI;;;AAGJ;EACI;;;AASJ;EAHI;;;AAOJ;EAPI;;;AAWJ;EAXI;;;AAeJ;EAfI;;;AAmBJ;EAnBI","file":"mixin.css"}
