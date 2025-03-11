@@ -498,19 +498,25 @@
         perPage : 5,
         gap : 20,
         arrows : false,
-        1024: { perPage : 3 , },
-        768:  { perPage: 1, gap: 10, }
+        pagination : false,
+        breakpoints:{
+            1140: { perPage : 4 ,},
+            890:  { perPage: 3, gap: 10, },
+            690:  { perPage: 2.5, gap: 0,  },
+            590:  { perPage: 2, }
+        }
     }).mount();
 
     new Splide('.slider2', {
         updateOnMove: true,
+
         perPage : 2,
         perMove : 2,
         focus  : 'center',
         arrows  : false,
         gap : '10px',
         breakpoints: {
-            768: { perPage: 1, perMove: 1 }
+            1260: { perPage: 1.5,  }
         }
     }).mount();
 </script>
