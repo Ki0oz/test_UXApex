@@ -1,17 +1,55 @@
-/* Error: Undefined variable.
- *    ,
- * 25 |         color: $primary-background-color;
- *    |                ^^^^^^^^^^^^^^^^^^^^^^^^^
- *    '
- *   scss/layout/_footer.scss 25:16  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 25 \2502          color: $primary-background-color;\a    \2502                 ^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss/layout/_footer.scss 25:16  root stylesheet";
+footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  text-align: left;
 }
+footer .footer-container img {
+  width: 50%;
+}
+footer .footer-container .footer-column {
+  width: 22%;
+}
+footer .footer-container .footer-column h4 {
+  padding-bottom: 20px;
+}
+footer .footer-container .footer-column p {
+  display: inline-grid;
+  padding-bottom: 20px;
+}
+footer .footer-container .footer-column span {
+  color: #634CB5;
+}
+footer .footer-container .footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+footer .footer-container .footer-column ul li {
+  margin: 15px 0;
+  cursor: pointer;
+}
+footer .footer-container .footer-column ul li a {
+  text-decoration: none;
+  color: #252525;
+}
+footer .footer-container .footer-column ul li a:hover {
+  color: #634CB5;
+}
+footer .footer-container .social-icons img {
+  width: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+footer .company {
+  text-align: center;
+  border-top: 1px solid #252525;
+  padding-top: 20px;
+}
+
+@media (max-width: 760px) {
+  footer .footer-container .footer-column {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */

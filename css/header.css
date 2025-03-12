@@ -1,17 +1,161 @@
-/* Error: Undefined variable.
- *    ,
- * 24 |           color: $secondary-text-color;
- *    |                  ^^^^^^^^^^^^^^^^^^^^^
- *    '
- *   scss/layout/_header.scss 24:18  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 24 \2502            color: $secondary-text-color;\a    \2502                   ^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss/layout/_header.scss 24:18  root stylesheet";
+header .navbar {
+  display: grid;
+  grid-template-columns: 1fr 3fr 0fr 1fr;
+  align-items: center;
+  justify-items: anchor-center;
+  padding: 10px 20px;
+  position: relative;
 }
+header .navbar img {
+  width: 120px;
+}
+header .navbar nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+header .navbar nav ul a {
+  text-decoration: none;
+  color: #252525;
+  font-weight: 500;
+  padding: 5px 10px;
+}
+header .navbar nav ul a:hover {
+  color: #604AAF;
+}
+header .navbar nav ul .dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #F5F6FE;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  padding: 10px 0;
+  z-index: 1;
+  pointer-events: none;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+header .navbar nav ul .dropdown .dropdown-menu ul {
+  display: flex;
+  justify-content: center;
+}
+header .navbar nav ul .dropdown .dropdown-menu ul li {
+  width: 100%;
+}
+header .navbar nav ul .dropdown .dropdown-menu ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #252525;
+}
+header .navbar nav ul .dropdown:hover .dropdown-menu {
+  display: block;
+}
+header .navbar nav ul .dropdown:hover .dropdown-menu,
+header .navbar nav ul .dropdown-menu:hover {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+header .navbar .search {
+  padding-right: 20px;
+}
+header .navbar .search input {
+  display: none;
+  padding: 5px;
+  width: 200px;
+  transition: all 0.3s ease;
+}
+header .navbar .search .search-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+header .navbar .search .search-icon img {
+  width: 24px;
+  height: 24px;
+}
+header .hero {
+  display: flex;
+  gap: 20px;
+  position: relative;
+}
+header .hero img {
+  width: 100%;
+}
+header .hero h1 {
+  position: absolute;
+  top: 5vw;
+  left: 43%;
+  font-size: 7rem;
+  font-weight: bold;
+  text-align: right;
+  line-height: 1.2;
+}
+header .hero h1 .span-text {
+  color: #604AAF;
+}
+header .hero .hero-text {
+  width: 90%;
+  position: relative;
+  align-content: end;
+}
+
+@media (max-width: 1360px) {
+  header .hero h1 {
+    position: absolute;
+    top: 12vw;
+    left: 14%;
+    width: 80%;
+    font-size: 5rem;
+    line-height: 1;
+    padding-right: 60px;
+  }
+}
+@media (max-width: 970px) {
+  header .hero {
+    overflow: hidden;
+  }
+  header .hero img {
+    width: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  header .hero .hero-text {
+    padding-top: 60%;
+  }
+}
+@media (max-width: 760px) {
+  header .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  header .navbar nav ul {
+    display: none;
+  }
+  header .navbar .quote-btn {
+    display: none;
+  }
+  header .hero {
+    flex-wrap: wrap;
+  }
+  header .hero img {
+    display: none;
+  }
+  header .hero h1 {
+    position: relative;
+    width: 100%;
+    top: 5vw;
+    left: 0;
+    text-align: left;
+  }
+  header .hero .hero-text {
+    width: 100%;
+    padding-top: 0;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */
