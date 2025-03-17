@@ -2,21 +2,27 @@ header {
 
   .navbar {
     display: grid;
-    grid-template-columns: 1fr 3fr 0fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr 1fr;
     align-items: center;
-    justify-items: anchor-center;
+    justify-items: center;
     padding: 10px 20px;
+    position: relative;
 
     img {
       width: 120px;
     }
 
     nav {
+      position: relative;
+      width: 100%;
+
       ul {
         list-style: none;
         display: flex;
         gap: 20px;
         justify-content: center;
+        margin: 0;
+        padding: 0;
         position: relative;
 
         a {
@@ -32,41 +38,28 @@ header {
         }
 
         .dropdown {
+          position: relative;
 
           .dropdown-menu {
             position: absolute;
             background-color: $secondary-background-color;
-            top: 100%;
-            left: 0;
-            padding: 10px 0;
-            z-index: 1;
+            top: 120%;
+            left: 50%;
+            width: calc(70vw - 40px);
+            padding: 20px;
+            z-index: 1000;
             opacity: 0;
             visibility: hidden;
-            transform: translateY(-10px);
+            transform: translateX(-50%) translateY(-10px);
             transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
             pointer-events: none;
             display: flex;
-            flex-direction: column;
-            align-items: left;
-            width: 100%;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 
-            ul {
-              display: flex;
-              justify-content: center;
-              padding: 0;
-              margin: 0;
-
-              li {
-                width: 100%;
-                list-style: none;
-
-                a {
-                  display: block;
-                  padding: 10px;
-                  text-decoration: none;
-                  color: $secondary-text-color;
-                }
-              }
+            .menu-block{
+              width: 100%;
             }
           }
         }
@@ -74,66 +67,70 @@ header {
         .dropdown:hover .dropdown-menu {
           opacity: 1;
           visibility: visible;
-          transform: translateY(0);
+          transform: translateX(-55%) translateY(0px);
           pointer-events: auto;
         }
       }
     }
-
-    .search {
-      padding-right: 20px;
-
-      input {
-        display: none;
-        padding: 5px;
-        width: 200px;
-        transition: all 0.3s ease;
-      }
-
-      .search-icon {
-        background: none;
-        border: none;
-        cursor: pointer;
-        padding: 0;
-
-        img {
-          width: 24px;
-          height: 24px;
-        }
-      }
-    }
   }
 
-  .hero {
-    display: flex;
-    gap: 20px;
-    position: relative;
 
-    img {
-      width: 100%;
+
+
+  .search {
+    padding-right: 20px;
+
+    input {
+      display: none;
+      padding: 5px;
+      width: 200px;
+      transition: all 0.3s ease;
     }
 
-    h1 {
-      position: absolute;
-      top: 5vw;
-      left: 43%;
-      font-size: 7rem;
-      font-weight: bold;
-      text-align: right;
-      line-height: 1.2;
+    .search-icon {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
 
-      .span-text {
-        color: $primary-text-color;
+      img {
+        width: 24px;
+        height: 24px;
       }
-    }
-
-    .hero-text {
-      width: 90%;
-      position: relative;
-      align-content: end;
     }
   }
 }
+
+.hero {
+  display: flex;
+  gap: 20px;
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+
+  h1 {
+    position: absolute;
+    top: 5vw;
+    left: 43%;
+    font-size: 7rem;
+    font-weight: bold;
+    text-align: right;
+    line-height: 1.2;
+
+    .span-text {
+      color: $primary-text-color;
+    }
+  }
+
+  .hero-text {
+    width: 90%;
+    position: relative;
+    align-content: end;
+  }
+}
+
 
 @media (max-width: 1360px) {
 

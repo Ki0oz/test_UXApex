@@ -51,19 +51,26 @@ p {
 
 header .navbar {
   display: grid;
-  grid-template-columns: 1fr 3fr 0fr 1fr;
+  grid-template-columns: 1fr 3fr 1fr 1fr;
   align-items: center;
-  justify-items: anchor-center;
+  justify-items: center;
   padding: 10px 20px;
+  position: relative;
 }
 header .navbar img {
   width: 120px;
+}
+header .navbar nav {
+  position: relative;
+  width: 100%;
 }
 header .navbar nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
   justify-content: center;
+  margin: 0;
+  padding: 0;
   position: relative;
 }
 header .navbar nav ul a {
@@ -76,73 +83,65 @@ header .navbar nav ul a {
 header .navbar nav ul a:hover {
   color: #604AAF;
 }
+header .navbar nav ul .dropdown {
+  position: relative;
+}
 header .navbar nav ul .dropdown .dropdown-menu {
   position: absolute;
   background-color: #F5F6FE;
-  top: 100%;
-  left: 0;
-  padding: 10px 0;
-  z-index: 1;
+  top: 120%;
+  left: 50%;
+  width: calc(70vw - 40px);
+  padding: 20px;
+  z-index: 1000;
   opacity: 0;
   visibility: hidden;
-  transform: translateY(-10px);
+  transform: translateX(-50%) translateY(-10px);
   transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
   pointer-events: none;
   display: flex;
-  flex-direction: column;
-  align-items: left;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+header .navbar nav ul .dropdown .dropdown-menu .menu-block {
   width: 100%;
-}
-header .navbar nav ul .dropdown .dropdown-menu ul {
-  display: flex;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
-}
-header .navbar nav ul .dropdown .dropdown-menu ul li {
-  width: 100%;
-  list-style: none;
-}
-header .navbar nav ul .dropdown .dropdown-menu ul li a {
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-  color: #252525;
 }
 header .navbar nav ul .dropdown:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
-  transform: translateY(0);
+  transform: translateX(-55%) translateY(0px);
   pointer-events: auto;
 }
-header .navbar .search {
+header .search {
   padding-right: 20px;
 }
-header .navbar .search input {
+header .search input {
   display: none;
   padding: 5px;
   width: 200px;
   transition: all 0.3s ease;
 }
-header .navbar .search .search-icon {
+header .search .search-icon {
   background: none;
   border: none;
   cursor: pointer;
   padding: 0;
 }
-header .navbar .search .search-icon img {
+header .search .search-icon img {
   width: 24px;
   height: 24px;
 }
-header .hero {
+
+.hero {
   display: flex;
   gap: 20px;
   position: relative;
 }
-header .hero img {
+.hero img {
   width: 100%;
 }
-header .hero h1 {
+.hero h1 {
   position: absolute;
   top: 5vw;
   left: 43%;
@@ -151,10 +150,10 @@ header .hero h1 {
   text-align: right;
   line-height: 1.2;
 }
-header .hero h1 .span-text {
+.hero h1 .span-text {
   color: #604AAF;
 }
-header .hero .hero-text {
+.hero .hero-text {
   width: 90%;
   position: relative;
   align-content: end;
