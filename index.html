@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.5/dist/css/splide.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </head>
 <body>
 <header>
     <div class="navbar wrapper">
-        <img class="logo" src="source/images/logo_helix.svg" alt="logo">
-        <nav>
+        <a class="logo-header" href="#"><img class="logo" src="source/images/logo_helix.svg" alt="logo"></a>
+        <nav class="navbar-list">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
@@ -23,38 +24,50 @@
                     <a href="#" class="dropbtn">More</a>
                     <ul class="dropdown-menu">
                         <li class="menu-block">
-                            <h4>Test</h4>
-                            <a href="#">Test</a>
-                            <a href="#">Test</a>
-                            <a href="#">Test</a>
-                            <a href="#">Test</a>
-                            <a href="#">Test</a>
-                        </li>
-                        <li class="menu-block">
-                            <h4>Test</h4>
-                            <a href="#">Test</a>
-                            <a href="#">Test</a>
-                            <a href="#">Test</a>
-                            <a href="#">Test</a>
-                            <a href="#">Test</a>
-                        </li>
-                        <li class="menu-block">
-                            <h4>Test</h4>
-                            <a href="#">Test</a>
-                            <a href="#">Test</a>
-                            <a href="#">Test</a>
+                            <div class="menu-left">
+                                <ul>
+                                    <li><a href="#" data-target="test-menu1">UXApex</a></li>
+                                    <li><a href="#" data-target="test-menu2">News</a></li>
+                                    <li><a href="#" data-target="test-menu3">Contact</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="menu-right">
+                                <div id="test-menu1" class="menu-wrapper">
+                                    <div class="menu-info">
+                                        <h4>Test 1</h4>
+                                        <p>Lorem ipsum.</p>
+                                    </div>
+                                </div>
+                                <div id="test-menu2" class="menu-wrapper">
+                                    <div class="menu-info">
+                                        <h4>Test 2</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, quam?</p>
+                                    </div>
+                                </div>
+                                <div id="test-menu3" class="menu-wrapper">
+                                    <div class="menu-info">
+                                        <h4>Test 3</h4>
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </li>
             </ul>
         </nav>
-        <div class="search">
-            <input type="text" class="search-input" placeholder="Search" />
-            <button type="submit" class="search-icon">
-                <img src="https://static-00.iconduck.com/assets.00/search-icon-2048x2048-cmujl7en.png" alt="search icon" />
-            </button>
+
+        <div class="header-more">
+            <div class="search">
+                <input type="text" class="search-input" placeholder="Search" />
+                <button type="submit" class="search-icon">
+                    <img src="https://static-00.iconduck.com/assets.00/search-icon-2048x2048-cmujl7en.png" alt="search icon" />
+                </button>
+            </div>
+            <a href="#" class="quote-btn"><button>Get A Quote</button></a>
         </div>
-        <a href="" class="quote-btn"><button>Get A Quote</button></a>
+
     </div>
     <div class="hero wrapper wrapper-ver">
         <img src="https://www.mein-helix.de/images/suite/digitalize-processes/einverstaendniserklaerungen-kenntnisnahme.png" alt="">
@@ -536,17 +549,28 @@
         }
     }).mount();
 
-    document.addEventListener("DOMContentLoaded", function () {
-        const dropdown = document.querySelector(".dropdown");
+    $(document).ready(function () {
 
-        dropdown.addEventListener("mouseenter", () => {
-            dropdown.classList.add("active");
+        $(".dropbtn").click(function (e) {
+            e.preventDefault();
+            $(".dropdown-menu").fadeToggle(300);
         });
 
-        dropdown.addEventListener("mouseleave", () => {
-            dropdown.classList.remove("active");
+        $(document).click(function (e) {
+            if (!$(e.target).closest(".dropdown").length) {
+                $(".dropdown-menu").fadeOut(300);
+            }
         });
+
+
+        $(".menu-left ul li a").hover(function () {
+            let targetId = $(this).data("target");
+            $(".menu-wrapper").hide();
+            $("#" + targetId).fadeIn(300);
+        });
+
     });
+
 
 </script>
 </body>
