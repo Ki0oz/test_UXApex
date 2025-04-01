@@ -134,20 +134,44 @@ header .navbar.wrapper .navbar-list ul li.dropdown .dropdown-menu .menu-block .m
   flex: 1;
   display: flex;
   flex-wrap: wrap;
-  padding-left: 20px;
+  padding: 0 20px;
   border-left: 1px solid #F5F6FE;
 }
 header .navbar.wrapper .navbar-list ul li.dropdown .dropdown-menu .menu-block .menu-right .menu-wrapper {
   display: none;
   padding: 10px;
 }
-header .navbar.wrapper .navbar-list ul li.dropdown .dropdown-menu .menu-block .menu-right .menu-wrapper .menu-info h4 {
+header .navbar.wrapper .navbar-list ul li.dropdown .dropdown-menu .menu-block .menu-right .menu-wrapper .menu-info {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+header .navbar.wrapper .navbar-list ul li.dropdown .dropdown-menu .menu-block .menu-right .menu-wrapper .menu-info .menu-header {
+  display: flex;
+  flex-direction: column;
+}
+header .navbar.wrapper .navbar-list ul li.dropdown .dropdown-menu .menu-block .menu-right .menu-wrapper .menu-info .menu-header h4 {
   margin: 0 0 5px;
   font-size: 18px;
 }
-header .navbar.wrapper .navbar-list ul li.dropdown .dropdown-menu .menu-block .menu-right .menu-wrapper .menu-info p {
+header .navbar.wrapper .navbar-list ul li.dropdown .dropdown-menu .menu-block .menu-right .menu-wrapper .menu-info .menu-header p {
   margin: 0;
   color: #252525;
+}
+header .navbar.wrapper .navbar-list ul li.dropdown .dropdown-menu .menu-block .menu-right .menu-wrapper .menu-info .menu-header .menu-tag {
+  margin-top: auto;
+}
+header .navbar.wrapper .navbar-list ul li.dropdown .dropdown-menu .menu-block .menu-right .menu-wrapper .menu-info .menu-header .menu-tag a {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+header .navbar.wrapper .navbar-list ul li.dropdown .dropdown-menu .menu-block .menu-right .menu-wrapper .menu-info .menu-header .menu-tag a:hover {
+  background-color: #6c47ff;
+  color: black;
+}
+header .navbar.wrapper .navbar-list ul li.dropdown .dropdown-menu .menu-block .menu-right .menu-wrapper .menu-info .menu-img img {
+  width: 250px;
 }
 header .navbar.wrapper .search {
   display: flex;
@@ -250,8 +274,7 @@ header .search .search-icon img {
 }
 @media (max-width: 760px) {
   header .navbar {
-    display: flex;
-    justify-content: space-between;
+    display: none;
   }
   header .navbar nav ul {
     display: none;

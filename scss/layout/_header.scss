@@ -109,7 +109,7 @@ header {
                     flex: 1;
                     display: flex;
                     flex-wrap: wrap;
-                    padding-left: 20px;
+                    padding: 0 20px;
                     border-left: 1px solid $secondary-background-color;
 
                     .menu-wrapper {
@@ -117,13 +117,41 @@ header {
                       padding: 10px;
 
                       .menu-info {
-                        h4 {
-                          margin: 0 0 5px;
-                          font-size: 18px;
+                        display: grid;
+                        grid-template-columns: 2fr 1fr;
+                        gap: 20px;
+                        .menu-header{
+                          display: flex;
+                          flex-direction: column;
+
+
+                          h4 {
+                            margin: 0 0 5px;
+                            font-size: 18px;
+                          }
+                          p {
+                            margin: 0;
+                            color: $secondary-text-color;
+                          }
+                          .menu-tag{
+                            margin-top: auto;
+
+                            a {
+                              border: 1px solid black;
+                              border-radius: 10px;
+                              margin-right: 10px;
+                              &:hover{
+                                background-color: #6c47ff;
+                                color: black;
+                              }
+                            }
+                          }
+
                         }
-                        p {
-                          margin: 0;
-                          color: $secondary-text-color;
+                        .menu-img{
+                          img{
+                            width: 250px;
+                          }
                         }
                       }
                     }
@@ -195,6 +223,8 @@ header {
     }
   }
 }
+
+
 
 .hero {
   display: flex;
@@ -274,8 +304,7 @@ header {
 
   header {
     .navbar {
-      display: flex;
-      justify-content: space-between;
+      display: none;
 
       nav {
         ul {
