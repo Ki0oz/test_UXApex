@@ -1,0 +1,165 @@
+header {
+  color: #ffffff;
+}
+header .video-container {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+}
+header .video-container iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+header .video-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+header .video-text {
+  position: absolute;
+  width: 50%;
+  top: 10%;
+  left: 10%;
+  color: #ffffff;
+  z-index: 2;
+}
+header .video-text .video-button {
+  display: flex;
+  gap: 20px;
+}
+header .video-text .video-button a {
+  color: #604AAF;
+  text-decoration: none;
+  background-color: #F5F6FE;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+header .video-text .video-button a:hover {
+  color: #252525;
+  background-color: #F9C446;
+}
+
+.main-benefits .container {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 50px auto;
+}
+.main-benefits .container .image-section {
+  flex: 1;
+}
+.main-benefits .container .image-section img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.main-benefits .container .content-section {
+  flex: 1;
+  padding: 20px;
+}
+.main-benefits .container .benefits {
+  margin-top: 20px;
+}
+.main-benefits .container .benefits .benefit {
+  padding: 15px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.main-benefits .container .benefits .benefit-content {
+  display: none;
+  padding: 10px;
+  border-left: 3px solid #604AAF;
+  margin-bottom: 10px;
+}
+
+.card-section {
+  position: relative;
+  overflow: hidden;
+  padding: 20px 0;
+}
+.card-section .bg-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  background: url("https://www.mein-helix.de/images/solutions/recruiting-pages.png");
+  opacity: 0.5;
+  z-index: 1;
+}
+.card-section .info-container {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  padding: 40px;
+  gap: 20px;
+}
+.card-section .info-container .info-block {
+  opacity: 0;
+  transform: translateY(20px);
+  padding: 30px;
+  border-radius: 8px;
+  width: 400px;
+  transition: 0.3s;
+  margin-bottom: 20px;
+  background: #634CB5;
+  color: #ffffff;
+}
+.card-section .info-container .info-block.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.card-section .info-container .info-block.left {
+  align-self: flex-start;
+}
+.card-section .info-container .info-block.right {
+  align-self: flex-end;
+}
+.card-section .info-container .info-block h3 {
+  padding-bottom: 8px;
+}
+
+.video-section {
+  padding: 40px;
+  text-align: center;
+}
+.video-section .video-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+.video-section .video-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.video-section .video-blocks .video-block {
+  flex: 1 1 45%;
+  min-width: 300px;
+}
+.video-section .video-blocks .video-block iframe {
+  width: 100%;
+  height: 350px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/*# sourceMappingURL=add.css.map */
